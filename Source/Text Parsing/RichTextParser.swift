@@ -16,7 +16,7 @@ class RichTextParser {
         static let mathTagName = "math"
         static let interactiveElementTagName = "interactive-element"
         static let highlightedElementTagName = "highlighted-element"
-        static let latexRegex = "\\[\(ParserConstants.mathTagName)\\](.*?)\\[\\/\(ParserConstants.mathTagName)\\]"
+        static let latexRegex = "\\$(.*?)\\$"
         static let latexRegexCaptureGroupIndex = 0
         static let interactiveElementRegex = """
         \\[\(ParserConstants.interactiveElementTagName)\\sid=.+?\\].*?\\[\\/\(ParserConstants.interactiveElementTagName)\\]
